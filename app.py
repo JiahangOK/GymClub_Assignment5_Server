@@ -13,7 +13,7 @@ from sqlalchemy import MetaData
 from sqlalchemy import create_engine
 from sqlalchemy.orm import *
 
-HOST = "172.30.115.162"
+HOST = "172.27.235.210"
 
 # 创建flask_sqlalchemy基于sqlite的实例db
 app = Flask(__name__)
