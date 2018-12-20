@@ -13,7 +13,7 @@ from sqlalchemy import MetaData
 from sqlalchemy import create_engine
 from sqlalchemy.orm import *
 
-HOST = "172.30.113.253"
+HOST = "172.30.115.162"
 
 # 创建flask_sqlalchemy基于sqlite的实例db
 app = Flask(__name__)
@@ -211,7 +211,7 @@ def check_user():
                     info_dict.get("video_info").append(data)
 
             jsoninfo = json.dumps(info_dict)
-            print("jsoninfo:", jsoninfo)
+            print("check_user jsoninfo:", jsoninfo)
             return jsoninfo
         else:
             return '1'
